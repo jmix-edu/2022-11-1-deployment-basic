@@ -12,8 +12,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 @UiDescriptor("task-browse.xml")
 @LookupComponent("tasksTable")
 public class TaskBrowse extends StandardLookup<Task> {
+
     @Autowired
     private TaskImportService taskImportService;
+
+
     @Autowired
     private CollectionLoader<Task> tasksDl;
     @Autowired
